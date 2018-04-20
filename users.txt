@@ -1,0 +1,4 @@
+Olya 3
+Nastya 5
+Vlada 3
+Svetlana 30
