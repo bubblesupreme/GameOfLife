@@ -1,11 +1,11 @@
 #ifndef PATTERNS_H
 #define PATTERNS_H
 
-#include "Constants.h"
-#include "GridClassic.h"
-#include"ButtonN.h"
-#include"MenuPattern.h"
-#include "Observer.h"
+#include "Global\Global.h"
+#include "Grid\GridClassic.h"
+#include "GUI elements\ButtonN.h"
+#include"Menus\MenuPattern.h"
+#include "Grid\Observer.h"
 
 
 class Patterns

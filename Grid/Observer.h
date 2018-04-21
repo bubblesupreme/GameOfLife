@@ -2,7 +2,7 @@
 #define OBSERVER_H
 
 #include "Grid.h"
-#include "Constants.h"
+#include "../Global/Global.h"
 #include <vector>
 
 class Observer

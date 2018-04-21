@@ -1,5 +1,5 @@
 #include "MainMenu.h"
-#include "RegulateSound.h"
+#include "../Global/RegulateSound.h"
 
 extern User user;
 
@@ -16,7 +16,7 @@ MainMenu::MainMenu(sf::RenderWindow* window)
 	, soundRegul(window, window->getSize().x / 15 * 14, window->getSize().y / 20, "volume", TOP, resources->italic, resources->soundRegular)
 {
 	menuPicture.setTextureRect(sf::Rect<int>(0, 0, int(window->getSize().x), int(window->getSize().y)));
-	menuTexture.loadFromFile("buttons\\MainMenu.jpg");
+	menuTexture.loadFromFile("resources/buttons/MainMenu.jpg");
 	menuPicture.setTexture(menuTexture);
 	hello.setString("  Hello, " + user.getName()+"!  Start your game!");
 	hello.setFillColor(sf::Color(90, 86, 209));
@@ -25,7 +25,7 @@ MainMenu::MainMenu(sf::RenderWindow* window)
 	hello.setPosition(window->getSize().x / 2- hello.getGlobalBounds().width/2, window->getSize().y*0.23);
 	resources->game->setLoop(true);
 	sf::Texture* homyak=new sf::Texture;
-	homyak->loadFromFile("buttons/homyakHello.png");
+	homyak->loadFromFile("resources/buttons/homyakHello.png");
 	homyakHello.setTexture(*homyak);
 	homyakHello.setScale(0.2, 0.2);
 	homyakHello.setPosition(window->getSize().x / 15 * 11, window->getSize().y / 5 * 2.7- homyakHello.getGlobalBounds().height*0.9);

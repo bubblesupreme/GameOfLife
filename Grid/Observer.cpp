@@ -1,16 +1,4 @@
 #include "Observer.h"
-//#include <iostream>
-//#include <ctime>
-//#define STRICT
-//#include <windows.h>
-//#include <algorithm>
-//using std::min;
-//using std::max;
-//#include <gdiplus.h>
-//#pragma comment(lib, "GdiPlus.lib") // наш многострадальный lib-файл 
-//using namespace Gdiplus; // как хочешь, но мне не в кайф постоянно писать Gdiplus::
-//
-//GUID png = { 0x557cf406, 0x1a04, 0x11d3,{ 0x9a, 0x73, 0x00, 0x00, 0xf8, 0x1e, 0xf3, 0x2e } };
 
 Observer::Observer(sf::RenderWindow* window)
 {

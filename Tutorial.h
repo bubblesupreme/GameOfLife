@@ -1,9 +1,9 @@
 #ifndef TUTORIAL_H
 #define TUTORIAL_H
 
-#include "GridClassic.h"
-#include "GridGene.h"
-#include"ButtonN.h"
+#include "Grid\GridClassic.h"
+#include "Grid\BoothGene.h"
+#include "GUI elements\ButtonN.h"
 
 class Tutorial
 {

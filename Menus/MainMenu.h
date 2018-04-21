@@ -1,11 +1,11 @@
 #ifndef MAINMENU_H
 #define MAINMENU_H
 
-#include "SimpleGame.h"
-#include "LevelGame.h"
-#include "Tutorial.h"
-#include "Patterns.h"
-#include "SwichUsers.h"
+#include "../SimpleGame.h"
+#include "../LevelGame.h"
+#include "../Tutorial.h"
+#include "../Patterns.h"
+#include "../SwichUsers.h"
 
 class MainMenu
 {

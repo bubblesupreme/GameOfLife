@@ -1,7 +1,7 @@
 #ifndef MENULEVEL_H
 #define MENULEVEL_H
 
-#include "Constants.h"
+#include "../Global/Global.h"
 
 class MenuLevel
 {

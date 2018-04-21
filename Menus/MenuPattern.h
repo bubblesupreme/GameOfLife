@@ -1,9 +1,9 @@
 #ifndef MENUPATTERN_H
 #define MENUPATTERN_H
 
-#include "ButtonN.h"
-#include "Constants.h"
-#include "PatternFigures.h"
+#include "../GUI elements/ButtonN.h"
+#include "../Global/Global.h"
+#include "../Additional/PatternFigures.h"
 
 class MenuPattern
 {

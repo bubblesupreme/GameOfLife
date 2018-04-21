@@ -1,6 +1,6 @@
 #include <SFML\Graphics.hpp>
 #include <SFML\Window.hpp>
-#include "MainMenu.h"
+#include "Menus\MainMenu.h"
 #include "SwichUsers.h"
 #include <fstream>
 

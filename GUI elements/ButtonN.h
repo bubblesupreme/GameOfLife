@@ -1,7 +1,7 @@
 #ifndef BUTTONN_H
 #define BUTTONN_H
 
-#include "StateEnum.h"
+#include "../Global/StateEnum.h"
 #include<SFML\Graphics.hpp>
 
 

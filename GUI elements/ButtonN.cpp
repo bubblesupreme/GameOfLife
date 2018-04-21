@@ -1,5 +1,5 @@
 #include "ButtonN.h"
-#include "Constants.h"
+#include "../Global/Global.h"
 
 
 ButtonN::ButtonN(sf::RenderWindow* window, float posX, float posY, const std::string& text

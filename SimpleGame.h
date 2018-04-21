@@ -1,11 +1,11 @@
 #ifndef SIMPLEGAME_H
 #define SIMPLEGAME_H
 
-#include "Observer.h"
-#include "MenuSimple.h"
-#include "GridClassic.h"
-#include "GridGene.h"
-#include "ButtonN.h"
+#include "Grid\Observer.h"
+#include "Menus\MenuSimple.h"
+#include "Grid\GridClassic.h"
+#include "Grid\GridGene.h"
+#include "GUI elements\ButtonN.h"
 #include<iostream>
 
 class SimpleGame

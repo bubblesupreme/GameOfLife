@@ -1,6 +1,6 @@
 #include "DemonstrateException.h"
-#include "ButtonN.h"
-#include "Constants.h"
+#include "../GUI elements/ButtonN.h"
+#include "../Global/Global.h"
 
 
 DemonstrateException::DemonstrateException()

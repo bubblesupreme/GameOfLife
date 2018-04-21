@@ -1,10 +1,10 @@
 #ifndef LEVELGAME_H
 #define LEVELGAME_H
 
-#include "GridClassic.h"
-#include"Observer.h"
-#include "MenuLevel.h"
-#include "ButtonN.h"
+#include "Grid\GridClassic.h"
+#include"Grid\Observer.h"
+#include "Menus\MenuLevel.h"
+#include "GUI elements\ButtonN.h"
 
 class LevelGame
 {

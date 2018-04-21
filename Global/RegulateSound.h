@@ -1,8 +1,8 @@
 #ifndef REGULATESOUND_H
 #define REGULATESOUND_H
 
-#include "Slider.h"
-#include "Constants.h"
+#include "../GUI elements/Slider.h"
+#include "Global.h"
 
 extern Slider slider;
 extern void soundRegulate();

@@ -1,6 +1,6 @@
 #include "SwichUsers.h"
-#include "Textbox.h"
-#include "DemonstrateException.h"
+#include "GUI elements\Textbox.h"
+#include "Additional\DemonstrateException.h"
 #include <iostream>
 #include <fstream>
 
@@ -37,7 +37,7 @@ SwichUsers::SwichUsers(sf::RenderWindow* window)
 	}
 	
 	textureBack= new sf::Texture;
-	textureBack->loadFromFile("buttons//switchUsers.jpg");
+	textureBack->loadFromFile("resources//buttons//switchUsers.jpg");
 	background.setTexture(textureBack);
 	background.setSize(sf::Vector2f(window->getSize().x, window->getSize().y));
 }

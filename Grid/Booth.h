@@ -2,7 +2,7 @@
 #define BOOTH_H
 
 #include<SFML\Graphics.hpp>
-#include "Constants.h"
+#include "../Global/Global.h"
 
 class Booth
 {

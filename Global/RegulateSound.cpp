@@ -1,5 +1,5 @@
 #include "RegulateSound.h"
-#include "ButtonN.h"
+#include "../GUI elements/ButtonN.h"
 
 Slider slider(0, 100, Position(0, 0), 0);
 

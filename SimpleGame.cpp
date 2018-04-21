@@ -1,7 +1,7 @@
 #define  _CRT_SECURE_NO_WARNINGS
 
 #include "SimpleGame.h"
-#include "DemonstrateException.h"
+#include "Additional\DemonstrateException.h"
 #include <cstring>
 
 
@@ -117,7 +117,7 @@ bool SimpleGame::start()
 {
 	sf::Sprite backgrund;
 	sf::Texture backgTexture;
-	backgTexture.loadFromFile("buttons//choice.jpg");
+	backgTexture.loadFromFile("resources//buttons//choice.jpg");
 	backgrund.setTextureRect(sf::Rect<int>(0, 0, int(window->getSize().x), int(window->getSize().y)));
 	backgrund.setTexture(backgTexture);
 	ButtonN ClassicGameButt(window, window->getSize().x / 2 * 1.3, window->getSize().y / 6 * 3.2, "", TOP, resources->italic, resources->Classic);

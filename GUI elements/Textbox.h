@@ -1,7 +1,7 @@
 #ifndef Textbox_H
 #define Textbox_H
 
-#include "Constants.h"
+#include "../Global/Global.h"
 
 
 class Textbox 

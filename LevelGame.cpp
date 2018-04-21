@@ -1,5 +1,5 @@
 #include "LevelGame.h"
-#include "RegulateSound.h"
+#include "Global\RegulateSound.h"
 #include "windows.h"
 
 
@@ -37,7 +37,7 @@ void LevelGame::play()
 	levelWins = user.getLevel();
 	sf::Sprite backgrund;
 	sf::Texture backgTexture;
-	backgTexture.loadFromFile("buttons//Levels.jpg");
+	backgTexture.loadFromFile("resources//buttons//Levels.jpg");
 	backgrund.setTextureRect(sf::Rect<int>(0, 0, int(window->getSize().x), int(window->getSize().y)));
 	backgrund.setTexture(backgTexture);
 	Size sizeLevelTexture(resources->levels[0]->getSize().x, resources->levels[0]->getSize().y);
@@ -963,7 +963,7 @@ void LevelGame::win()const
 
 	sf::Sprite homyakWin;
 	sf::Texture homyak;
-	homyak.loadFromFile("buttons/homyakWin.png");
+	homyak.loadFromFile("resources/buttons/homyakWin.png");
 	homyakWin.setTexture(homyak);
 	homyakWin.setScale(0.2, 0.2);
 	homyakWin.setPosition(homyakWin.getGlobalBounds().width*0.2, winWin.getSize().y - homyakWin.getGlobalBounds().height);
@@ -1018,7 +1018,7 @@ void LevelGame::loss ()const
 
 	sf::Sprite homyakLoss;
 	sf::Texture homyak;
-	homyak.loadFromFile("buttons/homyakLoss.png");
+	homyak.loadFromFile("resources/buttons/homyakLoss.png");
 	homyakLoss.setTexture(homyak);
 	homyakLoss.setScale(0.2, 0.2);
 	homyakLoss.setPosition(homyakLoss.getGlobalBounds().width*0.2, winWin.getSize().y - homyakLoss.getGlobalBounds().height);
@@ -1073,7 +1073,7 @@ void LevelGame::winAll()const
 
 	sf::Sprite homyakOoo;
 	sf::Texture homyak;
-	homyak.loadFromFile("buttons/homyakOoo.png");
+	homyak.loadFromFile("resources/buttons/homyakOoo.png");
 	homyakOoo.setTexture(homyak);
 	homyakOoo.setScale(0.15, 0.15);
 	homyakOoo.setPosition(homyakOoo.getGlobalBounds().width*0.23, winWin.getSize().y - homyakOoo.getGlobalBounds().height);
@@ -1086,6 +1086,15 @@ void LevelGame::winAll()const
 	result.setPosition(winWin.getSize().x / 2 - result.getGlobalBounds().width / 2
 		, winWin.getSize().y / 2 * 0.15);
 	ButtonN ok(&winWin, winWin.getSize().x / 2 * 0.8, winWin.getSize().y / 5 * 3.5, "Excellent!", TOP, resources->italic, resources->ok);
+
+	int txtr = 0;
+	sf::Sprite firework;
+	sf::Texture fireworkT;
+	fireworkT.loadFromFile("resources/buttons/firework1.png");
+	firework.setTexture(fireworkT);
+	firework.setPosition(winWin.getSize().x/2,0);
+	firework.setTextureRect(sf::IntRect(150 * txtr, 0, 150, 100));
+	int timer=0;
 
 	if (resources->game->getStatus() == sf::Music::Playing)
 	{
@@ -1107,8 +1116,23 @@ void LevelGame::winAll()const
 				return;
 			}
 		}
+		timer++;
+		if (timer == 130)
+		{
+			timer = 0;
+			firework.setTextureRect(sf::IntRect(150 * txtr, 0, 150, 100));
+			if (txtr < 6)
+			{
+				txtr++;
+			}
+			else
+			{
+				txtr = 0;
+			}
+		}
 		winWin.clear(sf::Color::White);
 		winWin.draw(background);
+		winWin.draw(firework);
 		winWin.draw(result);
 		winWin.draw(homyakOoo);
 		ok.draw();

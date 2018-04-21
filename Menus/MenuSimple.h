@@ -1,10 +1,10 @@
 #ifndef MENUSIMPLE_H
 #define MENUSIMPLE_H
 
-#include "Grid.h"
-#include "Constants.h"
-#include "ButtonN.h"
-#include "Slider.h"
+#include "../Grid/Grid.h"
+#include "../Global/Global.h"
+#include "../GUI elements/ButtonN.h"
+//#include "../GUI elements/Textbox.h"
 #include <iostream>
 #include <ctime>
 #include <windows.h>

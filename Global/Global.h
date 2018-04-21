@@ -3,9 +3,9 @@
 
 #include <map>
 #include "StateEnum.h"
-#include "Resources.h"
-#include "LevelBlanks.h"
-#include "User.h"
+#include "../Additional/Resources.h"
+#include "../Additional/LevelBlanks.h"
+#include "../User.h"
 
 typedef  std::pair<int, int> Position;
 typedef  std::pair<int, int> Size;

@@ -1,5 +1,5 @@
 #include "MenuPattern.h"
-#include "RegulateSound.h"
+#include "../Global/RegulateSound.h"
 
 
 MenuPattern::MenuPattern(sf::RenderWindow* window)

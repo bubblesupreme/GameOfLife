@@ -1,8 +1,8 @@
 #ifndef SWITCHUSERS_H
 #define SWITCHUSERS_H
 
-#include "Constants.h"
-#include "ButtonN.h"
+#include "Global\Global.h"
+#include "GUI elements\ButtonN.h"
 #include "User.h"
 
 
